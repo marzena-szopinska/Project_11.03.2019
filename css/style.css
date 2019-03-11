@@ -51,20 +51,31 @@ ul li:hover:before {
   left: 0;
 }
 
+hr {
+  border-top: 3px double #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 main {
   color: #fff;
-  background: #32ad9c url("../images/back.jpeg") no-repeat center;
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../images/back.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .main-img {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
 }
+
 
 .container {
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .box {
@@ -78,11 +89,17 @@ main {
 
 .btn {
   display: inline-block;
-  margin-top: 1rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem 2.5rem;
   background-color: rgba(255, 255, 255, .4);
   border: 2px solid #fff;
   color: #fff;
+}
+
+footer span {
+  font-weight: 900;
 }
 
 /* Fade In */
