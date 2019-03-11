@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-size: 1rem;
   /* use font shorthand here */
@@ -51,6 +57,12 @@ ul li:hover:before {
   left: -5px;
 }
 
+.italic {
+  color: pink;
+  font-weight: 900;
+  font-style: italic;
+}
+
 hr {
   border-top: 3px double #fff;
   margin-top: 1rem;
@@ -80,9 +92,10 @@ main {
 
 .box {
   font-size: 1.25rem;
+  width: 100%;
 }
 
-.logo img {
+.logo-img {
   width:195px;
   height: 195px;
 }
@@ -101,6 +114,8 @@ main {
 footer {
   background-color: pink;
   color: #fff;
+  height: 70px;
+  padding-top: .30rem;
 }
 
 footer span {
@@ -142,5 +157,63 @@ footer span {
     width: 80%;
     margin: 0 auto;
     padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  nav {
+    width: 50%;
+    float: right;
+  }
+
+  header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 1rem;
+  }
+
+  ul li:hover:before {
+    top: -4px;
+  }
+
+  .box:first-of-type {
+    padding-top: 7rem;
+  }
+
+  .box:last-of-type {
+    padding-bottom: 4rem;
+  }
+
+  .main-img {
+    display: block;
+    margin: 50px auto;
+  }
+
+  main {
+    min-height: 100%;
+  }
+
+
+  .logo {
+    width: 50%;
+    float: left;
+  }
+
+  .logo-img {
+    width:70px;
+    height: 70px;
+    float: left;
   }
 }
