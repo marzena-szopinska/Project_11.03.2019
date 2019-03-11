@@ -47,8 +47,8 @@ ul li:hover:before {
   font-size: 47px;
   position: absolute;
   color: pink;
-  top: -12px;
-  left: 0;
+  top: -9px;
+  left: -5px;
 }
 
 hr {
@@ -98,6 +98,11 @@ main {
   color: #fff;
 }
 
+footer {
+  background-color: pink;
+  color: #fff;
+}
+
 footer span {
   font-weight: 900;
 }
@@ -126,4 +131,16 @@ footer span {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    width: 20%;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+  }
 }
