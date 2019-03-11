@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  /* use font shorthand here */
+  font: normal 1rem/1.5 'PT Sans Narrow', sans-serif;
+  letter-spacing: 1;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.conatiner {
+  width: 100%;
+}
+
+.logo img {
+  width:140px;
+  height: 140px;
+}
