@@ -16,11 +16,53 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 30%;
+}
+
+ul li {
+  padding: .75rem;
+  font-size: 1.45rem;
+  transition: color .2s ease;
+}
+
+ul li:hover {
+  color: pink;
+  position: relative;
+}
+
+ul li:hover:before {
+  content: "\2022";
+  font-size: 47px;
+  position: absolute;
+  color: pink;
+  top: -12px;
+  left: 0;
+
+}
+
+header, main, footer {
+  padding: 2rem 1rem;
+}
+
+main {
+  color: #fff;
+  background: #32ad9c url("../images/back.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.main-img {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .conatiner {
   width: 100%;
 }
 
 .logo img {
-  width:140px;
-  height: 140px;
+  width:195px;
+  height: 195px;
 }
