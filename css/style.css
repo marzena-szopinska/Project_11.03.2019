@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   margin: 0 auto;
@@ -40,11 +44,6 @@ ul li:hover:before {
   color: pink;
   top: -12px;
   left: 0;
-
-}
-
-header, main, footer {
-  padding: 2rem 1rem;
 }
 
 main {
@@ -58,11 +57,25 @@ main {
   margin-bottom: 1rem;
 }
 
-.conatiner {
+.container {
   width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.box {
+  font-size: 1.25rem;
 }
 
 .logo img {
   width:195px;
   height: 195px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background-color: rgba(255, 255, 255, .4);
+  border: 2px solid #fff;
+  color: #fff;
 }
