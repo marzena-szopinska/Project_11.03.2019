@@ -10,6 +10,11 @@ body {
   font: normal 1rem/1.5 'PT Sans Narrow', sans-serif;
   letter-spacing: 1;
   text-align: center;
+  -webkit-animation: fadein 2s;
+   -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+     -o-animation: fadein 2s;
+        animation: fadein 2s;
 }
 
 img {
@@ -78,4 +83,30 @@ main {
   background-color: rgba(255, 255, 255, .4);
   border: 2px solid #fff;
   color: #fff;
+}
+
+/* Fade In */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
