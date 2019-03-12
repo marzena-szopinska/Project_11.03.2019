@@ -4,18 +4,16 @@
   box-sizing: border-box;
 }
 
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 body {
-  font-size: 1rem;
-  /* use font shorthand here */
+  /* set text color to white */
+  color: #fff;
+  /* uset font : thicknes, size/line-height font family */
   font: normal 1rem/1.5 'PT Sans Narrow', sans-serif;
+  /* increase letter spacing */
   letter-spacing: 1;
+  /* center the text */
   text-align: center;
+  /* play animation on load */
   -webkit-animation: fadein 2s;
    -moz-animation: fadein 2s;
     -ms-animation: fadein 2s;
@@ -28,18 +26,38 @@ img {
 }
 
 a {
+  /* remove default underline for links */
   text-decoration: none;
 }
 
+/* clearing floats */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+/*************** HEADER ************/
+
 ul {
+  color: #888;
+  /* remove default style from the list */
   list-style: none;
+  /* center element */
   margin: 0 auto;
+  /* set its width to 30% */
   width: 30%;
 }
 
 ul li {
   padding: .75rem;
   font-size: 1.45rem;
+  /* animate text color */
   transition: color .2s ease;
 }
 
@@ -49,6 +67,7 @@ ul li:hover {
 }
 
 ul li:hover:before {
+  /* create a pink dot next to the list element */
   content: "\2022";
   font-size: 47px;
   position: absolute;
@@ -57,20 +76,24 @@ ul li:hover:before {
   left: -5px;
 }
 
+/**************** MAIN ****************/
 .italic {
+  /* make the text italic, bold and pink */
   color: pink;
   font-weight: 900;
   font-style: italic;
 }
 
 hr {
+  /* create double horizontal rule */
   border-top: 3px double #fff;
+  /* make some space around the ekement */
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 main {
-  color: #fff;
+  /* put light liniear-gradient over the image */
   background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../images/back.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -80,27 +103,26 @@ main {
 .main-img {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  /* add a shadow to the image */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* round corners of the image */
   border-radius: 6px;
 }
 
-
-.container {
-  width: 100%;
-  padding: 1rem 1rem;
-}
-
 .box {
+  /* increase the font size */
   font-size: 1.25rem;
   width: 100%;
 }
 
 .logo-img {
-  width:195px;
+  /* set width and height of the logo */
+  width: 195px;
   height: 195px;
 }
 
 .btn {
+  /* create a semi transparent button */
   display: inline-block;
   font-weight: 900;
   margin-top: 2rem;
@@ -111,16 +133,22 @@ main {
   color: #fff;
 }
 
+/************** FOOTER ************/
+
 footer {
+  /* set pink background for the footer */
   background-color: pink;
-  color: #fff;
+  /* set its height to 70px */
   height: 70px;
   padding-top: .30rem;
 }
 
 footer span {
+  /* make the text bold */
   font-weight: 900;
 }
+
+/********************* FADE IN ANIMATION ****************/
 
 /* Fade In */
 @keyframes fadein {
@@ -149,28 +177,29 @@ footer span {
 }
 
 @media only screen and (min-width: 768px) {
-  ul {
-    width: 20%;
+  .container {
+    /* set the width of the container to 80% */
+    width: 80%;
+    /* center the container */
+    margin: 0 auto;
+    /* add some space inside the container */
+    padding: 1rem 1rem;
   }
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem 1rem;
+  ul {
+    width: 20%;
   }
 }
 
 @media only screen and (min-width: 1024px){
-  nav {
-    width: 50%;
-    float: right;
-  }
-
   header {
+    /* add shadow to the header */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* pin the header to the top of the page */
     position: fixed;
     top: 0;
     width: 100%;
+    /* set the background color to white */
     background-color: #fff;
   }
 
@@ -179,50 +208,68 @@ footer span {
     padding-bottom: .35rem;
   }
 
+  nav {
+    /* set the width to 50% */
+    width: 50%;
+    /* float it to right */
+    float: right;
+  }
+
   ul {
     width: 100%;
   }
 
   ul li {
+    /* make it an inline block */
     display: inline-block;
+    /* add some space to the left of the element */
     margin-left: 25px;
     padding: 1rem;
   }
 
   ul li:hover:before {
+    /* change the top position */
     top: -4px;
   }
 
   .box {
+    /* set its width to 70% and center the box container */
     width: 70%;
     margin: 0 auto;
   }
 
+  /* target first box */
   .box:first-of-type {
     padding-top: 7rem;
   }
 
+  /* target second box */
   .box:last-of-type {
     padding-bottom: 4rem;
   }
 
   .main-img {
+    /* center the image */
     display: block;
     margin: 50px auto;
   }
 
   main {
+    /* set minimum height */
     min-height: 100%;
   }
 
   .logo {
+    /* set the logo container to 50% anf float it to left */
     width: 50%;
     float: left;
   }
 
   .logo-img {
+    /* decrease the image size */
     width:70px;
     height: 70px;
+    /* float it to the left */
     float: left;
   }
 }
